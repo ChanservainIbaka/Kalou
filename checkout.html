@@ -1,0 +1,283 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Kalou | Checkout</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+  <body class="bg-light">
+    <header>
+      <!-- Fixed navbar -->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand" href="index.html">Kalou</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Acceuil</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="homme.html">Homme<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="femme.html">Femme</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="accessoire.html">Accesoires</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Á Propos</a>
+            </li>
+          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Chercher" aria-label="Chercher">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Go</button>
+          </form>
+        </div>
+      </nav>
+    </header>
+    <br>
+    <br>
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">Votre Panier</span>
+            <span class="badge badge-secondary badge-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">nom du produit</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">1200F CFA</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Deuxième produit</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">800F CFA</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Troisième produit</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">1000F CFA</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between bg-light">
+              <div class="text-success">
+                <h6 class="my-0">Code promo</h6>
+                <small>EXAMPLECODE</small>
+              </div>
+              <span class="text-success">-1500F CFA</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (CFA)</span>
+              <strong>1500</strong>
+            </li>
+          </ul>
+
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Promo code">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary">Redeem</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-8 order-md-1">
+          <h4 class="mb-3">Livraison</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="prénom">Prénom</label>
+                <input type="text" class="form-control" id="prénom" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Un prénom est obligatoire.
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="nom">Nom</label>
+                <input type="text" class="form-control" id="nom" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Un nom est obligatoire.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="utilisateur">Utilisateur</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">@</span>
+                </div>
+                <input type="text" class="form-control" id="utilisateur" placeholder="Utilisateur" required>
+                <div class="invalid-feedback" style="width: 100%;">
+                  Le nom d'utilisateur est obligatoire.
+                </div>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email">Email <span class="text-muted">(Facultatif)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="votre@email.com">
+              <div class="invalid-feedback">
+                Entrer une addresse email valide pour plus d'informations.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="addresse">Addresse</label>
+              <input type="text" class="form-control" id="addresse" placeholder="1234 Main St" required>
+              <div class="invalid-feedback">
+                Entrer une addresse valide pour l'envoi de l'achat.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="addresse2">Addresse 2 <span class="text-muted">(Facultatif)</span></label>
+              <input type="text" class="form-control" id="addresse2" placeholder="Apartement ou ruel">
+            </div>
+
+            <div class="row">
+              <div class="col-md-5 mb-3">
+                <label for="pays">Pays</label>
+                <select class="custom-select d-block w-100" id="pays" required>
+                  <option value="">Choisir...</option>
+                  <option>United States</option>
+                  <option>Congo</option>
+                  <option>France</option>
+                </select>
+                <div class="invalid-feedback">
+                  Choissez votre pays.
+                </div>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Ville</label>
+                <select class="custom-select d-block w-100" id="state" required>
+                  <option value="">Choisir...</option>
+                  <option>Brazzaville</option>
+                  <option>Pointe Noire</option>
+                  <option>Dolisie</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please provide a valid state.
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="same-address">
+              <label class="custom-control-label" for="same-address">L'addresse de livraison est la même que celui mentionné en haut</label>
+            </div>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="save-info">
+              <label class="custom-control-label" for="save-info">Enregistrer ces informations pour la prochaine fois</label>
+            </div>
+            <hr class="mb-4">
+
+            <h4 class="mb-3">Paiment</h4>
+
+            <div class="d-block my-3">
+              <div class="custom-control custom-radio">
+                <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+                <label class="custom-control-label" for="credit">Carte de crédit</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="debit">Master carte</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                <label class="custom-control-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="cc-name">Nom sur carte</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nom complet comme sur carte</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="cc-number">Numéro de la carte</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label for="cc-expiration">Expiration</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col-md-3 mb-3">
+                <label for="cc-cvv">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+            <hr class="mb-4">
+            <a href="confirmation.html"><button class="btn btn-primary btn-lg btn-block" type="submit">Confirmer la commande</button></a>
+          </form>
+        </div>
+      </div>
+    </main>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
